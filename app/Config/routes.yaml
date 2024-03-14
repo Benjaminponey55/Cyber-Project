@@ -2,3 +2,13 @@ index:
     uri: /
     controller: Controller\HomeController
     httpMethod: [GET]
+
+encodage:
+    uri: /encodage
+    controller: Controller\EncodageController
+    httpMethod: [GET,POST]
+
+decodage:
+    uri: /decodage
+    controller: Controller\DecodageController
+    httpMethod: [GET,POST]

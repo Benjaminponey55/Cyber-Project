@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ titre }}{% endblock %}
+
+{% block content %}
+
+    <h1>{{ titre }}</h1>
+    <form action="/decodage" method="post">
+        <input type="text" name="message" id="message">
+        <button type="submit" name="btn" onclick="">Coder</button>
+        <br>
+        <input type="text" name="reponse" value="{{reponse}}"  >
+        {#        value="{{encodageMess}}"#}
+    </form>
+    <a href="/"> Home </a>
+{% endblock %}
